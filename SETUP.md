@@ -19,12 +19,12 @@ Instructions on how to setup, configure and deploy the backend service is as fol
      - Select **API keys** option on left pane of the dashboard.
      - Select **Create an IBM Cloud API key** button on right of the **API keys** dashboard.
         <p align="middle">
-            <img src="images/backend/IAM/iamKey.PNG" width ="30%" height="30%">
+            <img src="images/IAM/iamKey.PNG" width ="30%" height="30%">
         </p>
 
      - Enter an API key name and description. Example,
         <p align="middle">
-            <img src="images/backend/IAM/createIAMApikey.PNG" width ="30%" height="30%">
+            <img src="images/IAM/createIAMApikey.PNG" width ="30%" height="30%">
         </p>
 
      - An IAM API key will be created, copy and/or download the key and secure it safely.
@@ -35,7 +35,7 @@ Instructions on how to setup, configure and deploy the backend service is as fol
      - Click on **Manage** tab on top right of the IBM Cloud dashboard. And click on **Account** option to open **Account** dashboard.
      - Select **Resource groups** option on the left panel of the dashboard. Usually a **Default** resource group will be created when a cloud account is created. If not a new Resource group can be created by clicking on the **Create** button on the right of the **Resource groups** dashboard.
         <p align="middle">
-            <img src="images/backend/account/resourceGrp.PNG" width ="30%" height="30%">
+            <img src="images/account/resourceGrp.PNG" width ="30%" height="30%">
         </p>
 
    - **Create Cloud Foundry Organization**;
@@ -43,14 +43,14 @@ Instructions on how to setup, configure and deploy the backend service is as fol
      - From the **Account** dashboard, select **Cloud Foundry orgs** option on the left pane to open **Cloud Foundry Orgs** dashboard.
      - Click on **Create** on the top right of the dashboard to create new Organization. If an organization already exists, you can use the same.
         <p align="middle">
-            <img src="images/backend/account/organization.PNG" width ="30%" height="30%">
+            <img src="images/account/organization.PNG" width ="30%" height="30%">
         </p>
 
    - **Create Space**;
      - From the **Cloud Foundry Orgs** dashboard, click on the Name of the organization to open the **Space** tab for the organization.
      - Click on the **Add a space** button the top right of the dashboard to create new Space. If a space already exists, you can use the same.
         <p align="middle">
-            <img src="images/backend/account/space.PNG" width ="30%" height="30%">
+            <img src="images/account/space.PNG" width ="30%" height="30%">
         </p>
 
 2. Git:
@@ -77,43 +77,43 @@ Follow the instructions to setup and configure IBM Cloud Functions.
 - Create a new IBM cloud account. If you already have an account, please log in to account.
 - Select **IBM Cloud Functions** icon on left the pane of the IBM Cloud account dashboard <br>
 <p align="middle">
-    <img src="images/backend/cloudFunctions/dashboard_cloudFunctions.PNG" width ="30%" height="30%">
+    <img src="images/cloudFunctions/dashboard_cloudFunctions.PNG" width ="30%" height="30%">
 </p>
 
 &nbsp; &nbsp; &nbsp; &nbsp; Or you can search for **Functions** in search bar and select **Functions**.
 
 <p align="middle">
-    <img src="images/backend/cloudFunctions/searchCF.PNG" width ="30%" height="30%">
+    <img src="images/cloudFunctions/searchCF.PNG" width ="30%" height="30%">
 </p>
 
 - Select **Actions** option on the left pane of **IBM Cloud Functions** dashboard.
 
 <p align="middle">
-    <img src="images/backend/cloudFunctions/actionsCF.PNG" width ="30%" height="30%">
+    <img src="images/cloudFunctions/actionsCF.PNG" width ="30%" height="30%">
 </p>
 
 - Create new Actions by clicking the **Create** on top right of the dashboard, enter Action Name as **liquid-prep-action**. Create new Package **liquidPrep**. Select **Node.js 12** as Runtime.
 
 <p align="middle">
-    <img src="images/backend/cloudFunctions/createActionCF.PNG" width ="30%" height="30%">
+    <img src="images/cloudFunctions/createActionCF.PNG" width ="30%" height="30%">
 </p>
 
 - Go back to **IBM Cloud Functions** dashboard and select **APIs** option on the left pane.
 
 <p align="middle">
-    <img src="images/backend/cloudFunctions/api_cloudFunctions.PNG" width ="30%" height="30%">
+    <img src="images/cloudFunctions/api_cloudFunctions.PNG" width ="30%" height="30%">
 </p>
 
 - Select **Create API** option on top right of the dashboard, enter API name as **liquidPrep-cf-api**. Let the **Base path for API** be default **/liquidPrep-cf-api**. Let other settings be default values, unless other specific entries are required. Scroll down the page and select **Create**.
 
 <p align="middle">
-    <img src="images/backend/cloudFunctions/createAPI_CF.PNG" width ="30%" height="30%">
+    <img src="images/cloudFunctions/createAPI_CF.PNG" width ="30%" height="30%">
 </p>
 
 - Once API is created, select the API **liquidPrep-cf-api**, select **Manage Sharing and Keys** on the left pane of the API dashboard. Enable **Include API in organization-level Shared APIs view**.
 
 <p align="middle">
-    <img src="images/backend/cloudFunctions/shareAPI_CF.PNG" width ="30%" height="30%">
+    <img src="images/cloudFunctions/shareAPI_CF.PNG" width ="30%" height="30%">
 </p>
 
 ## Setup IBM Cloudant
@@ -123,7 +123,7 @@ Follow the instructions to setup and configure IBM Cloudant.
 - Enter **Cloudant** in the IBM Cloud search bar and select **Cloudant**.
 
   <p align="middle">
-      <img src="images/backend/cloudant/searchCloudant.PNG" width ="30%" height="30%">
+      <img src="images/cloudant/searchCloudant.PNG" width ="30%" height="30%">
   </p>
 
 - Next configure the Cloudant DB,
@@ -135,19 +135,19 @@ Follow the instructions to setup and configure IBM Cloudant.
   - Select a suitable pricing Plan – Lite, Standard and Standard on Transaction Engine.
 
   <p align="middle">
-      <img src="images/backend/cloudant/configureCloudant.PNG" width ="30%" height="30%">
+      <img src="images/cloudant/configureCloudant.PNG" width ="30%" height="30%">
   </p>
 
 - Select **Create** on the bottom right pane of Cloudant dashboard. A message will be displayed to say that the instance is being provisioned, which returns you to the Resource list. From the Resource list, you see the status for your instance is, **Provision in progress.**
 
   <p align="middle">
-      <img src="images/backend/cloudant/activeCloudant.PNG" width ="30%" height="30%">
+      <img src="images/cloudant/activeCloudant.PNG" width ="30%" height="30%">
   </p>
 
 - When status of the instance changes to **Active**, click the **Cloudant-liquidPrep** instance and select **Service Credentials** tab on left pane of dashboard. Select **New Credential**, enter Name as **liquid-prep** and Role as **Manager**. A service credential will be created.
 
   <p align="middle">
-      <img src="images/backend/cloudant/serviceCredsCloudant.PNG" width ="30%" height="30%">
+      <img src="images/cloudant/serviceCredsCloudant.PNG" width ="30%" height="30%">
   </p>
 
 - Select **Manage** tab on the left pane and select **Launch Dashboard** on the top right of the page. It will launch a Cloudant dashboard to create new database.
@@ -156,7 +156,7 @@ Follow the instructions to setup and configure IBM Cloudant.
 - Enter Database name as **liquid-prep-crops**. Select the Partitioning option as **Non-partitioned**. And click on **Create** button at the bottom.
 
    <p align="middle">
-       <img src="images/backend/cloudant/createDBCloudant.PNG" width ="15%" height="30%">
+       <img src="images/cloudant/createDBCloudant.PNG" width ="15%" height="30%">
    </p>
 
   - The**liquid-prep-crops** database will be created and listed in Databases page.
@@ -164,19 +164,19 @@ Follow the instructions to setup and configure IBM Cloudant.
 - Select **liquid-prep-crops** and click on **Create Document** on top right of the page. A document with auto generated **\_id** key will open.
 
    <p align="middle">
-       <img src="images/backend/cloudant/createDoc_cloudant.PNG" width ="30%" height="30%">
+       <img src="images/cloudant/createDoc_cloudant.PNG" width ="30%" height="30%">
    </p>
 
 - Go to Liquid Prep project directory `~/LiquidPrep-Backend/backend/resources/crops`. Open each crop document, copy the contents in the document and paste it in the **New Document** that was opened in **liquid-prep-crops** database and click **Create Document** button.
 
   - Example for Corn crop;
   <p align="middle">
-      <img src="images/backend/cloudant/createDoc_cloudant_corn.PNG" width ="30%" height="30%">
+      <img src="images/cloudant/createDoc_cloudant_corn.PNG" width ="30%" height="30%">
   </p>
 
   - Corn document will be created and listed in **liquid-prep-crops** database.
   <p align="middle">
-      <img src="images/backend/cloudant/liquidPrep_cloudant_cropsList.PNG" width ="30%" height="30%">
+      <img src="images/cloudant/liquidPrep_cloudant_cropsList.PNG" width ="30%" height="30%">
   </p>
 
 - Similarly, repeat previous step for all the other crops document.
@@ -206,13 +206,13 @@ After seeting up and configuring IBM Cloud Functions and Cloudant DB, the Liquid
       - Select **API Management** option.
 
       <p align="middle">
-        <img src="images/backend/envEntries/apiManage.PNG" width ="30%" height="30%">
+        <img src="images/envEntries/apiManage.PNG" width ="30%" height="30%">
       </p>
 
       - Select **Shared APIs** in **API Management** dashboard.
       - The **Route** value in **Shared APIs** dashboard is the **CLOUD_FUNCTIONS_URL** value.
         <p align="middle">
-            <img src="images/backend/envEntries/sharedApi.PNG" width ="30%" height="30%">
+            <img src="images/envEntries/sharedApi.PNG" width ="30%" height="30%">
         </p>
 
     - **_CLOUDANT_DB_NAME: liquid-prep-crops_** <br>
@@ -227,12 +227,12 @@ After seeting up and configuring IBM Cloud Functions and Cloudant DB, the Liquid
       - Select **Cloudant-liquidPrep** instance under **Services** in **Resource list** dashboard.
 
         <p align="middle">
-        <img src="images/backend/envEntries/cloudantService.PNG" width ="30%" height="30%">
+        <img src="images/envEntries/cloudantService.PNG" width ="30%" height="30%">
         </p>
 
       - The **External Endpoint (preferred)** value is the **CLOUDANT_DB_URL** value.
         <p align="middle">
-            <img src="images/backend/envEntries/cloudantEndpoint.PNG" width ="30%" height="30%">
+            <img src="images/envEntries/cloudantEndpoint.PNG" width ="30%" height="30%">
         </p>
 
     - **_WEATHER_API_KEY:_** <br>
@@ -261,7 +261,7 @@ After seeting up and configuring IBM Cloud Functions and Cloudant DB, the Liquid
   - **-r**: <br>
   It is the **Region** of the cloud account. Region can be obtained in the selected **Cloud Foundry Organization** dashboard beside the **Space** Name.
     <p align="middle">
-    <img src="images/backend/account/space.PNG" width ="30%" height="30%">
+    <img src="images/account/space.PNG" width ="30%" height="30%">
     </p>
 
 - Navigate to project directory `~/LiquidPrep-Backend/backend/liquid-prep-cf` from command terminal and execute `npm run deploy-dev-api`.
@@ -269,5 +269,5 @@ After seeting up and configuring IBM Cloud Functions and Cloudant DB, the Liquid
 - Once the deployment is successful, go to IBM Cloud Functions dashboard, select **Actions** tab on the left pane and you can see **liquid-prep-action** instance in the **Actions** dashboard.
 
   <p align="middle">
-      <img src="images/backend/cloudFunctions/liquidPrep-Actions-CF.PNG" width ="30%" height="30%">
+      <img src="images/cloudFunctions/liquidPrep-Actions-CF.PNG" width ="30%" height="30%">
   </p>
