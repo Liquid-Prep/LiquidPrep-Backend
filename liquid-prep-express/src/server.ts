@@ -23,9 +23,9 @@ export class Server {
 
     app.use('/', express.static('dist/liquid-prep-app'))
   
-    app.get('/', (req: express.Request, res: express.Response, next) => { //here just add next parameter
+    app.get('/', (req: express.Request, res: express.Response, next: any) => { //here just add next parameter
       res.sendFile(
-        path.resolve( __dirname, "index.html" )
+        path.resolve(__dirname, "index.html")
       )
       // next();
     })
